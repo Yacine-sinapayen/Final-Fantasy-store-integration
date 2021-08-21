@@ -105,5 +105,11 @@ body{
     margin: 0.5rem;
 }
 
+/* Modifier */
+
+.product--out--of-stock .product__buy{
+    background-color: #666 ;
+}
+
 
 
