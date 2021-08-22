@@ -1,19 +1,19 @@
 # oFig
 
-Boutique de figurines
+Miniatures store
 
-## Objectif 
+## Objective
 
-Intégerer la maquette suivante en s'appuyant sur la méthode BEM. 
+Integrate the model using the BEM method.
 
 ![resultat](ressources/resultat-complet.png)
 
-## Charte
+## Visual Identity
 
-Font : Raleway (trouvable sur Google fonts)
+Font : Raleway
 
-Couleurs :
-- Rouge : `#c80000`
-- Gris foncé : `#666`
-- Gris clair (bordures et catégorie): `#ccc`
-- du noir pour les textes et fond blanc
+Colors :
+- Red : `#c80000`
+- Dark grey : `#666`
+- Light grey (border and category): `#ccc`
+- black for texts and white background
