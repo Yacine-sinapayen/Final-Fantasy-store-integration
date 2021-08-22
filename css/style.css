@@ -87,6 +87,9 @@ body{
     border-bottom: 1px solid #ccc;
     font-size: 0.8rem;
     padding: 0.3rem;
+    position: relative;
+    right: 38px;
+    background-color: red;
 }
 .product__name{
     font-weight: 600;
@@ -122,18 +125,23 @@ body{
 }
 
 .product__add{
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     background-color: red;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.2rem;
     position: absolute;
     top:5px;
     right: 10px;
+    transform: rotate(0deg);
+    transition: all 1s ease-in-out;
+}
+.product__add:hover{
+    transform: rotate(360deg);
 }
 .product__badge__promo{
     width: 50px;

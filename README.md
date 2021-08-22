@@ -4,14 +4,9 @@ Boutique de figurines
 
 ## Objectif 
 
-Votre objectif est de réaliser cette intégration en utilisant flexbox, des balises sémantiques et des class CSS 
+Intégerer la maquette suivante en s'appuyant sur la méthode BEM. 
 
 ![resultat](ressources/resultat-complet.png)
-
-Les images se trouvent dans le dossier `images/` du projet
-
-Les textes sont dans le dossier des ressources : `ressources/textes.txt`
-
 
 ## Charte
 
