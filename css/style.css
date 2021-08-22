@@ -2,15 +2,18 @@
 body{
     font-family: 'Raleway', sans-serif; 
 }
-.main-header {
-    background-color: red;
-}
 
 .main-header__title{
+    background-color: red;
     padding: 1rem;
     color: white;
     font-size: 2rem;
     font-weight: bold;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .main-header__subtitle{
@@ -23,6 +26,7 @@ body{
     background-color:#666;
     text-align: center;
     color: white;
+    margin-top: 4rem;
 }
 
 .main-header__secondary-subtitle{
@@ -51,6 +55,18 @@ body{
     flex-wrap: wrap;
 }
 
+.main__solde{
+    padding: 0.5rem;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: -1px;
+    top:150px;
+    border-radius: 8%;
+}
+
 /*------------- Articles */
 .product{
     border: 1px solid #ccc;
@@ -58,6 +74,7 @@ body{
     margin: 1rem;  
     padding: 0.5rem;
     box-sizing: border-box;
+    position: relative;
 }
 .product__image{
     width: 100%;
@@ -70,7 +87,6 @@ body{
     border-bottom: 1px solid #ccc;
     font-size: 0.8rem;
     padding: 0.3rem;
-
 }
 .product__name{
     font-weight: 600;
@@ -105,11 +121,46 @@ body{
     margin: 0.5rem;
 }
 
-/* Modifier */
+.product__add{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1rem;
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+.product__badge__promo{
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+
+/*------------- Modifier */
 
 .product--out--of-stock .product__buy{
     background-color: #666 ;
 }
+
+.product--out--of-stock .product__name{
+    color: red ;
+}
+
+
+
 
 
 
