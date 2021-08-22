@@ -3,8 +3,11 @@ body{
     font-family: 'Raleway', sans-serif; 
 }
 
+.main-content{
+    position: relative;
+}
 .main-header__title{
-    background-color: red;
+    background-color: #c80000;
     padding: 1rem;
     color: white;
     font-size: 2rem;
@@ -57,7 +60,7 @@ body{
 
 .main__solde{
     padding: 0.5rem;
-    background-color: red;
+    background-color: #c80000;
     color: white;
     display: flex;
     flex-direction: column;
@@ -89,7 +92,7 @@ body{
     padding: 0.3rem;
     position: relative;
     right: 38px;
-    background-color: red;
+    background-color: #c80000;
 }
 .product__name{
     font-weight: 600;
@@ -101,7 +104,7 @@ body{
     font-weight:300;
 }
 .product__buy{
-    background-color: red;
+    background-color: #c80000;
     padding: 1rem;
     display: flex;
     color: white;
@@ -117,31 +120,37 @@ body{
 .product__price{
     text-decoration: line-through;
     margin: 0.5rem;
+    white-space: nowrap;
 }
 .product__promo{
     text-decoration: none;
     font-weight: bold;
     margin: 0.5rem;
+    white-space: nowrap;
 }
 
 .product__add{
     width: 28px;
     height: 28px;
-    background-color: red;
-    color: white;
     display: flex;
-    align-items: center;
+    background-color: #c80000;
+    color: white;
     justify-content: center;
+    align-items: center;
     font-weight: bold;
     font-size: 1.2rem;
     position: absolute;
     top:5px;
     right: 10px;
+    border-radius: 50%;
     transform: rotate(0deg);
-    transition: all 1s ease-in-out;
+    transition: transform 1s, width 0.3s, height 0.3s ease-in-out;
+    text-decoration: none;
 }
 .product__add:hover{
     transform: rotate(360deg);
+    width: 50px;
+    height: 50px;
 }
 .product__badge__promo{
     width: 50px;
@@ -154,7 +163,7 @@ body{
     justify-content: center;
     position: absolute;
     right: 10px;
-    top: 50px;
+    top: 60px;
 }
 
 /*------------- Modifier */
@@ -164,9 +173,28 @@ body{
 }
 
 .product--out--of-stock .product__name{
-    color: red ;
+    color: #c80000 ;
 }
 
+/*------------- Responsive */
+@media screen and (min-width: 671px) and (max-width: 1045px) {
+    .product {
+        width: calc((100%/2) - (2*2rem));
+        margin-left: 2rem;
+    }
+    .product__category{
+        right:28px;
+    }
+}
+@media screen and (max-width: 670px) {
+    .product {
+        width: calc(100% - 2rem);
+        margin-left: 2rem;
+    }
+    .product__category{
+        right:28px;
+    }
+}
 
 
 
