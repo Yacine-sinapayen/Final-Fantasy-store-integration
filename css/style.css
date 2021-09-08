@@ -109,8 +109,7 @@ body{
     display: flex;
     color: white;
     text-decoration: none;
-    align-items: center;
-   
+    align-items: center;  
 }
 
 .product__buy-text{
